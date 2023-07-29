@@ -23,3 +23,8 @@ print(s)
 print('method 5')
 print(f'{item1["name"]} is {item1["age"]}')
 print(f'{item2["name"]} is {item2["age"]}')
+
+print("method 6 ")
+from string import Template
+s = Template('$name is $age')
+print(s.substitute(name=item1['name'],age=item1['age']))
